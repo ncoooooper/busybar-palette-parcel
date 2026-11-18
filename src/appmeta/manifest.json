@@ -4,6 +4,6 @@
   "name": "Palette Parcel",
   "version": "0.1.0",
   "api_version": "27.12.0",
-  "description": "Palette Parcel",
+  "description": "Match an editable RGB swatch to the closest thread in a personal palette using CIE76 colour distance.",
   "author": "ncoooooper"
 }

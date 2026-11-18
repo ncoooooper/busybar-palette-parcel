@@ -1,0 +1,12 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "threads": {
+      "type": "string",
+      "label": "Thread codes and sRGB colours",
+      "default": "OCH|BD8C49,MOS|678362,IND|48639B,ROS|BA7981,CRM|EEE2C1,INK|303B47",
+      "max_length": 180
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "BB-062",
+  "source": "On-device state and physical controls exercised in the firmware emulator.",
+  "scenario": "Changed two RGB channels, checked the nearest thread and saved the swatch.",
+  "keys": [
+    "up",
+    "ok",
+    "down",
+    "start"
+  ],
+  "frames": 54,
+  "distinct_frames": 16,
+  "exit": "App io.ncoooooper.paletteparcel exited: finished; heap peak 86.1 of 128 KiB",
+  "sha256": "a27c81fa6eda52cc01ef0f723e3085b74b6c79e3f3ab2dbdf8f764e3d1b59ac2"
+}
