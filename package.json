@@ -1,7 +1,7 @@
 {
   "name": "busybar-palette-parcel",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Match an editable RGB swatch to the closest thread in a personal palette using CIE76 colour distance.",
   "author": "ncoooooper",
   "type": "module",

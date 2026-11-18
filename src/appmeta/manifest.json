@@ -2,7 +2,7 @@
   "format_version": 1,
   "id": "io.ncoooooper.paletteparcel",
   "name": "Palette Parcel",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "api_version": "27.12.0",
   "description": "Match an editable RGB swatch to the closest thread in a personal palette using CIE76 colour distance.",
   "author": "ncoooooper"
