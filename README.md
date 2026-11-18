@@ -6,13 +6,11 @@ Compare a reference swatch only with threads you actually own. The two front-pan
 
 ## Tune a reference color
 
-1. Enter thread codes and six-digit RGB values in device settings, for example `MOS
-2. 678362,INK
-3. 303B47`. Use colors measured for your own materials if available.
-4. Turn the wheel to change the active channel in steps of five. Click to advance from red to green to blue.
-5. Watch the left patch while you edit. The right patch and short code show the nearest color in your list.
+1. Enter thread codes and six-digit RGB values in device settings. For example, `MOS|678362,INK|303B47` defines two threads.
+2. Turn the wheel to change the active channel by five. The three short marks under the left swatch are red, green and blue in order. The lit mark tells you which channel the wheel edits. Click to select the next one.
+3. Compare the two swatches. The right swatch and the code beside it identify the closest thread in your list.
 
-![The reference swatch shifts slightly while MOS stays the nearest thread.](media/guide/tune-the-reference.gif)
+![The wheel changes the reference swatch, then a click moves the indicator from red to green.](media/guide/tune-the-reference.gif)
 
 ## Compare and save the choice
 
@@ -20,11 +18,11 @@ Compare a reference swatch only with threads you actually own. The two front-pan
 2. Press **Start** to save the reference RGB. Try another channel adjustment, then hold the wheel to recall the stored reference.
 3. Take the suggested physical thread to your fabric for the final comparison. The LEDs display the configured colors.
 
-![Two green comparison patches remain visible beside the MOS code as the selected channel is adjusted.](media/guide/compare-thread-swatches.gif)
+![The green channel changes under the left swatch, then recalling the saved color restores the comparison.](media/guide/compare-thread-swatches.gif)
 
 ## Example from the emulator
 
-The sample palette has six entries. In the recording the small channel edits leave MOS closest; the code need not change at every turn. If the reference exactly equals a palette entry, its calculated color distance is zero.
+The sample palette has six entries. The code changes only when another thread becomes a closer match. If the reference exactly equals a palette entry, its calculated color distance is zero.
 
 ## Run in the emulator
 
