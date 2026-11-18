@@ -4,6 +4,20 @@ Match an editable RGB swatch to the closest thread in a personal palette using C
 
 Compare a reference swatch only with threads you actually own. The two front-panel patches show the reference and the closest match side by side, with the thread code alongside them.
 
+## Screen transitions
+
+Click through red, green and blue. A short underline opens beneath the selected channel while the swatches keep their actual colours.
+
+![Palette Parcel front display. Click through red, green and blue. A short underline opens beneath the selected channel while the swatches keep their actual colours.](media/guide/screen-transitions.gif)
+
+<details>
+
+<summary>Watch the rear display</summary>
+
+![Palette Parcel rear display during the recorded controls](media/guide/screen-transitions-rear.gif)
+
+</details>
+
 ## Tune a reference color
 
 1. Enter thread codes and six-digit RGB values in device settings. For example, `MOS|678362,INK|303B47` defines two threads.
@@ -34,6 +48,6 @@ Open BUSY Bar Emulator. From this repository, run:
 
 Press **Back** to exit.
 
-The GIFs are excerpts from the emulator recording. Each front-display pixel is shown at 9× its original width and height. The end frames pause for reading.
+The GIFs are excerpts from the emulator recording. Each LED occupies a 16 × 16 cell with a black border. The end frames pause for reading.
 
 [Full recording](media/controls.mp4) · [Rear display](screenshots/back-1.png) · [Firmware test](EMULATOR-QA.md) · [MIT license](LICENSE)
