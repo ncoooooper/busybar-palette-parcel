@@ -9,6 +9,6 @@ function parse(s:string){const out:Thread[]=[];for(const pair of s.split(",")){c
 let threads=parse("OCH|BD8C49,MOS|678362,IND|48639B,ROS|BA7981,CRM|EEE2C1,INK|303B47");
 desk<S>({name:"Palette Parcel",accent:"#B695F0",motion:{"motif":"trace","color":"#B695F0","shine":"#F8E8FF"},initial:()=>({rgb:[109,141,98],ch:0,saved:[109,141,98]}),configure:(_,v)=>{const t=parse(String(v.threads||""));if(t.length)threads=t;},
  render:s=>{const target=lab(s.rgb),distance=(t:Thread)=>Math.sqrt(t.lab.reduce((a,v,i)=>a+(v-target[i])**2,0));let best=threads[0];for(const t of threads)if(distance(t)<distance(best))best=t;
- const hex=s.rgb.map(v=>v.toString(16).padStart(2,"0")).join("").toUpperCase(),art:Frame=[rect("ref",0,0,20,16,"#"+hex+"FF"),rect("match",21,0,20,16,"#"+best.hex+"FF"),label("code",best.code.slice(0,5),43,3,"#FFF2D7FF","front","tiny")];
+ const hex=s.rgb.map(v=>v.toString(16).padStart(2,"0")).join("").toUpperCase(),art:Frame=[rect("ref",0,0,20,16,"#"+hex+"FF"),rect("match",21,0,20,16,"#"+best.hex+"FF"),label("code",best.code,43,3,"#FFF2D7FF","front","tiny")];
  return {title:"Thread match",value:best.code,art,lines:["Reference #"+hex,"Thread "+best.code+" / #"+best.hex,"CIE76 distance "+distance(best).toFixed(1),"Edit "+"RGB"[s.ch]+": "+s.rgb[s.ch],"Wheel: adjust / Click: channel","Start: save / Hold OK: recall"]};},
  action:(s,k)=>{if(k==="ok")s.ch=wrap(s.ch+1,3);if(k==="up"||k==="down")s.rgb[s.ch]=Math.max(0,Math.min(255,s.rgb[s.ch]+(k==="up"?5:-5)));if(k==="start")s.saved=s.rgb.slice();if(k==="hold-ok")s.rgb=s.saved.slice();}});
